@@ -1,0 +1,43 @@
+1. Открыть командную строку в папке с файлами.
+Запустить сервер: uvicorn main:app --reload --port 5000
+
+2. Открыть браузер и перейти:
+http://127.0.0.1:5000/status
+
+Будет : "I'm OK"
+
+3. Для проверки предсказания: 
+- Открыть Postman
+- Method: POST
+- URL: http://127.0.0.1:5000/predict
+- Body → raw → JSON
+
+Вставить JSON:
+
+{
+    "visit_number": 1,
+    "screen_width": 1080,
+    "screen_height": 1920,
+    "visit_hour": 8,
+    "is_weekend": 1,
+    "utm_source": "google",
+    "utm_medium": "cpc",
+    "utm_campaign": "summer_sale",
+    "utm_adcontent": "banner_1",
+    "device_category": "mobile",
+    "device_brand": "Samsung",
+    "device_browser": "Chrome",
+    "geo_country": "Russia",
+    "geo_city": "Moscow"
+}
+
+
+Сервер работает на localhost:5000
+
+статус: GET  http://127.0.0.1:5000/status
+Ожидаемый ответ: "I'm OK"
+
+версия: GET  http://127.0.0.1:5000/version
+Ожидаемый ответ: "Random Forest for SberAuto"
+
+предсказание: POST http://127.0.0.1:5000/predict
