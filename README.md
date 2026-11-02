@@ -1,4 +1,4 @@
-# SberAvtopodpiska: ML Conversion Prediction Serviсe
+#SberAvtopodpiska: ML Conversion Prediction Serviсe
 Machine Learning service (FastAPI) to predict whether a user session results in a target action conversionfor the "SberAvtopodpiska" car subscription service.
 
 **Model:** Random Forest (ROC-AUC: 0.697, balanced class weights).
