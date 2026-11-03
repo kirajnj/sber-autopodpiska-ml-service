@@ -1,5 +1,23 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Jupyter
 .ipynb_checkpoints/
-.env
+
+# FastAPI / Uvicorn
+*.log
+.uvicorn/
+
+# IDE / OS
+.vscode/
+.idea/
 .DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
