@@ -5,11 +5,11 @@ Model: Random Forest with balanced class weights.
 Key features: UTM parameters, visit activity, device info.
 
 ## Project Structure
-README.md                  # This file
-instructions_ru.txt        # Instructions for running the service (in Russian)
-main.py                    # FastAPI web service for real-time predictions
-pipeline.pkl               # Trained ML pipeline
-sber_autopodpiska.ipynb    # Jupyter notebook with EDA, feature engineering, and model training
+- README.md                  # This file
+- instructions_ru.txt        # Instructions for running the service (in Russian)
+- main.py                    # FastAPI web service for real-time predictions
+- pipeline.pkl               # Trained ML pipeline
+- sber_autopodpiska.ipynb    # Jupyter notebook with EDA, feature engineering, and model training
 
 ### Problem Statement
 The product team is unable to manually identify users who are likely to submit an inquiry or request a callback.
